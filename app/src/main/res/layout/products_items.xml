@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="top"
+    app:cardBackgroundColor="@color/white"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/imgService"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"
+                android:layout_height="100dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:paddingLeft= "10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/txtServiceName"
+                android:textColor="@color/black"
+                android:textSize= "14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_width="18dp"
+                    android:src="@drawable/rate_this_active"
+                    android:paddingTop="2dp"
+                    android:layout_height="18dp"/>
+                <TextView
+                    android:id="@+id/txtRatingCount"
+                    android:textColor="@color/dark_grey"
+                    android:textSize= "14sp"
+                    android:paddingLeft = "5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:src="@drawable/ruppee"
+                    android:paddingTop="2dp"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:textColor="@color/black"
+                    android:textSize= "16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-3dp"
+                    android:paddingLeft = "6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/offer"
+                    android:paddingTop="2dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:id="@+id/txtOffer"
+                    android:textColor="@color/dark_grey"
+                    android:textSize= "14sp"
+                    android:text="20% off on 2nd Service"
+                    android:paddingLeft = "5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:id="@+id/viewDetails"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:background="@drawable/round_shape_boarder"
+                android:layout_height="40dp" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize= "15sp"
+                    android:text= "View Details"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

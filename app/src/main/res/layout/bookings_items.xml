@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="top"
+    app:cardBackgroundColor="@color/white"
+    app:cardMaxElevation="25dp"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/txtServiceType"
+                android:textColor="@color/black"
+                android:textSize= "14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/cardStatus"
+            android:background="@drawable/round_button_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/txtStatus"
+                android:textColor="@color/white"
+                android:textSize= "14sp"
+                android:text="BOOKING CANCELLED"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        </RelativeLayout>
+        <View  android:layout_width="match_parent"
+            android:background="@color/dark_grey"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/layoutData"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgService"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:paddingLeft= "10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/txtServiceName"
+                android:textColor="@color/black"
+                android:textSize= "14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/imgRatingCount"
+                    android:layout_width="18dp"
+                    android:src="@drawable/rate_this_active"
+                    android:paddingTop="2dp"
+                    android:layout_height="18dp"/>
+                <TextView
+                    android:id="@+id/txtRatingCount"
+                    android:textColor="@color/dark_grey"
+                    android:textSize= "14sp"
+                    android:paddingLeft = "5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:background="@color/dark_grey"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/reviewStatus"
+            android:layout_height="wrap_content"
+            >
+            <RatingBar
+                android:textColor="@color/black"
+                android:rating="4.5"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtAddReview"
+                android:textColor="@color/black"
+                android:textSize= "16sp"
+                android:text="@string/addReview"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

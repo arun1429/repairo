@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="35dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="-20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="25dp"
+        app:cardPreventCornerOverlap="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" >
+            <RelativeLayout
+                android:id="@+id/imageBack"
+                android:layout_width="60dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/back_icon"
+                    android:layout_height="25dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_toRightOf="@+id/imageBack"
+                android:layout_width="260dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Select Address"
+                    android:textColor="@color/black"
+                    android:textSize= "14sp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:id="@+id/addNewAddress"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/round_shape_boarder4"
+                android:layout_height="55dp"
+                android:orientation= "horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:textSize= "15sp"
+                    android:gravity="center"
+                    android:layout_height="match_parent" >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:gravity="center"
+                        android:src="@drawable/add_icon"
+                        app:tint="#FC983F"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:textSize= "15sp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize= "14sp"
+                        android:textStyle= "bold"
+                        android:text= "@string/addNewAddress"
+                        android:textColor="@color/black"
+                        android:textAllCaps = "true"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/listAddress"
+                android:orientation="vertical"
+                tools:listitem="@layout/address_items"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

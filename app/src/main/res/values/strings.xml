@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Repairo</string>
+    <string name="continueText">Continue</string>
+    <string name="changeNumber">Change Number</string>
+    <string name="resend">Resend</string>
+    <string name="location">Location</string>
+    <string name="home">Home</string>
+    <string name="booking">Booking</string>
+    <string name="profile">Profile</string>
+    <string name="emergency">Emergency</string>
+    <string name="bookNow">Book Now</string>
+    <string name="cancelBooking">Cancel Booking</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Email </string>
+    <string name="dob">Date Of Birth </string>
+    <string name="phone">Phone Number </string>
+    <string name="address">Address </string>
+    <string name="addAddress">Add Address</string>
+    <string name="addNewAddress">Add New Address</string>
+    <string name="addReview">Add Review</string>
+    <string name="message">Message </string>
+    <string name="cityTxt">City </string>
+    <string name="districtTxt">District </string>
+    <string name="stateTxt">State </string>
+    <string name="pinCodeTxt">Pin Code </string>
+    <string name="defaultTxt">Default</string>
+    <string name="editProfile">Edit Profile </string>
+    <string name="saveAddress">Save Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="landmark2">Landmark(Optional)</string>
+    <string name="profession">Profession</string>
+    <string name="aadharCard">Aadhar Card</string>
+    <string name="logout">Logout</string>
+    <string name="updateNow">Update Now</string>
+    <string name="which">Which</string>
+    <string name="service">Service</string>
+    <string name="blankString">XXXXXXXXXX</string>
+    <string name="do_you_need">do you need?</string>
+    <string name="mechanicRegister">Mechanic Register</string>
+    <string name="overall_rating">Your overall ratings of this product</string>
+    <string name="title_review">Title for your review</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="what_did">What did you like</string>
+    <string name="logout_msg">Are you sure you want to Logout?</string>
+    <string name="cancel_msg">Are you sure you want cancel this booking</string>
+    <string name="Rs">\u20B9</string>
+    <string name="notifications_admin_channel_name">Cova</string>
+    <string name="notifications_admin_channel_description">If you have any new massage than it notify you.</string>
+     <string name="newText">New</string>
+    <string name="empty_text">This field can not be empty !</string>
+      <string name="review">Review</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+     <string name="view_details">View Details</string>
+      <string name="my_profile">My Profile</string>
+    <string name="my_account">My Account</string>
+       <string name="login">Log In</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="ok">OK</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+</resources>

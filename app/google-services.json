@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "290192212277",
+    "project_id": "cannabis-bb433",
+    "storage_bucket": "cannabis-bb433.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290192212277:android:f60fb3b90175dd15ec4c7c",
+        "android_client_info": {
+          "package_name": "com.app.repairo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290192212277-nvvehm9jnv5p655k4ilohc7nvj26gfpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwWcvgepcSPKqMScg2Dcxcclp4g53UPpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290192212277-nvvehm9jnv5p655k4ilohc7nvj26gfpd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "290192212277-15ep73fee1u9a6r8f3855pcc8avorq7f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.repairo.app"
+              }
+            }
+          ]
+        }
+      }
+    
+    }
+  ],
+  "configuration_version": "1"
+}
